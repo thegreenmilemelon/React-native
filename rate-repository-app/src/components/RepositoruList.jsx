@@ -48,6 +48,18 @@ const repositories = [
   },
 ];
 
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+  title: {
+    fontSize: 32,
+  },
+  separator: {
+    height: 10,
+  },
+});
+
 const ItemSeparator = () => <View style={styles.separator} />;
 
 const RepositoryList = () => {
@@ -62,17 +74,5 @@ const RepositoryList = () => {
     </SafeAreaView>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-  title: {
-    fontSize: 32,
-  },
-  separator: {
-    height: 10,
-  },
-});
 
 export default RepositoryList;
